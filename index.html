@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Website Building</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9537e44b5.js" crossorigin="anonymus"></script>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        #login-container {
+            width: 460px;
+            margin: 0 auto;
+        }
+        
+        label,
+        input,
+        button {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        input,
+        button {
+            padding: 8px;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        div {
+            margin: 16px 0px;
+        }
+        
+        .greska {
+            border: 1px solid red;
+            outline: none;
+        }
+        
+        .ispravno {
+            border: 2px solid green;
+            outline: none;
+        }
+        
+        .tacno {
+            color: green;
+            position: absolute;
+            left: 425px;
+            top: 26px;
+            font-size: 20px;
+            display: none;
+        }
+        
+        .netacno {
+            color: red;
+            position: absolute;
+            left: 427px;
+            top: 26px;
+            font-size: 22px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="login-container">
+
+
+        <div style="position:relative;">
+            <label for="username">Username:</label>
+            <input id="username" class="" type="text">
+            <i class="fas fa-check tacno " id="tacnoUsername"></i>
+            <i class="fas fa-times netacno" id="netacnoUsername"></i>
+        </div>
+
+        <div style="position: relative;">
+            <label for="password">Password:</label>
+            <input id="password" type="password">
+            <i class="fas fa-check tacno " id="tacnoPassword"></i>
+            <i class="fas fa-times netacno" id="netacnoPassword"></i>
+        </div>
+
+        <button id="login">Login</button>
+
+        <p id="text"></p>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
