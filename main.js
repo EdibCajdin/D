@@ -1,6 +1,6 @@
 var user = {
-    name: "a",
-    pw: "1"
+    name: "new_user",
+    pw: "123456789"
 }
 
 var username = $("#username");
